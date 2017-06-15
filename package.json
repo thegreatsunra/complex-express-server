@@ -1,0 +1,33 @@
+{
+  "name": "basic-express-server",
+  "description": "basic-express-server",
+  "version": "0.1.0",
+  "homepage": "https://github.com/thegreatsunra/basic-express-server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thegreatsunra/basic-express-server.git"
+  },
+  "author": "Dane Petersen <thegreatsunra@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "^7.0.0",
+    "npm": "^4.0.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js ./",
+    "start": "node ./index.js"
+  },
+  "main": "index.js"
+}
