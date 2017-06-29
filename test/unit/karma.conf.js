@@ -5,7 +5,7 @@ module.exports = (config) => {
     browsers: ['PhantomJS'],
     frameworks: ['mocha'],
     files: [
-      'spec/*.js'
+      'specs/**/*.js'
     ],
     preprocessors: {
       '**/*.js': ['webpack']
