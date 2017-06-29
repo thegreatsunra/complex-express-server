@@ -41,8 +41,9 @@
   "scripts": {
     "lint": "eslint --ext .js ./",
     "lint:fix": "eslint --ext .js --fix ./",
-    "start": "node ./index.js",
     "test": "./node_modules/karma/bin/karma start ./test/unit/karma.conf.js --single-run"
+    "test:unit": "karma start ./test/unit/karma.conf.js --single-run",
+    "start": "node ./index.js"
   },
   "main": "index.js"
 }
