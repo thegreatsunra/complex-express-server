@@ -48,6 +48,7 @@
     "test:e2e": "nightwatch --env chrome --config test/e2e/nightwatch.conf.js",
     "test:unit": "karma start ./test/unit/karma.conf.js --single-run",
     "start": "node ./index.js"
+    "start": "node ./src/server/index.js"
   },
-  "main": "index.js"
+  "main": "./src/server/index.js"
 }
