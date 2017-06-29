@@ -1,25 +1,17 @@
+const webpackTestConfig = require('../../webpack/test.conf')
+
 module.exports = (config) => {
   config.set({
     browsers: ['PhantomJS'],
     frameworks: ['mocha'],
     files: [
-      '*.js'
+      'spec/*.js'
     ],
     preprocessors: {
-      '*.js': ['webpack']
+      '**/*.js': ['webpack']
     },
     plugins: ['karma-mocha', 'karma-webpack', 'karma-phantomjs-launcher'],
-    webpack: {
-      module: {
-        rules: [
-          {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: ['babel-loader', 'eslint-loader']
-          }
-        ]
-      }
-    },
+    webpack: webpackTestConfig,
     webpackMiddleware: {
     }
   })
