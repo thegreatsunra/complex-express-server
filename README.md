@@ -1,6 +1,6 @@
-# basic-express-server
+# complex-express-server
 
-> basic-express-server
+> Express server with lots of testing infrastructure
 
 ## Getting started
 
