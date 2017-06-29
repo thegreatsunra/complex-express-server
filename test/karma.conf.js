@@ -8,7 +8,7 @@ module.exports = (config) => {
     preprocessors: {
       '*.js': ['webpack']
     },
-    plugins: ['karma-mocha', 'karma-phantomjs-launcher'],
+    plugins: ['karma-mocha', 'karma-webpack', 'karma-phantomjs-launcher'],
     webpack: {
     },
     webpackMiddleware: {
