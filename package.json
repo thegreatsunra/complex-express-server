@@ -24,11 +24,13 @@
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
+    "mocha": "^3.4.2",
   },
   "scripts": {
     "lint": "eslint --ext .js ./",
     "lint:fix": "eslint --ext .js --fix ./",
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "test": "mocha"
   },
   "main": "index.js"
 }
