@@ -44,7 +44,8 @@
   "scripts": {
     "lint": "eslint --ext .js ./",
     "lint:fix": "eslint --ext .js --fix ./",
-    "test": "./node_modules/karma/bin/karma start ./test/unit/karma.conf.js --single-run"
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:e2e": "nightwatch --env chrome --config test/e2e/nightwatch.conf.js",
     "test:unit": "karma start ./test/unit/karma.conf.js --single-run",
     "start": "node ./index.js"
   },
