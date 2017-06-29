@@ -6,4 +6,10 @@ describe('Array', () => {
       assert.equal(-1, [1, 2, 3].indexOf(4))
     })
   })
+  describe('#indexOf()', () => {
+    it('should return 2 when the value 3 is present', () => {
+      assert.equal(2, [1, 2, 3].indexOf(3))
+    })
+  })
+})
 /* eslint-enable */
