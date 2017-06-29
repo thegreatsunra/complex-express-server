@@ -9,8 +9,8 @@
 2) clone this repo
 
 ```bash
-git clone https://github.com/thegreatsunra/basic-express-server.git
-cd basic-express-server
+git clone https://github.com/thegreatsunra/complex-express-server.git
+cd complex-express-server
 ```
 
 3) install dependencies
@@ -19,12 +19,16 @@ cd basic-express-server
 yarn
 ```
 
-4) (optional) replace the contents of the `/public` folder with your static site
-
-5) run the app
+4) run the app
 
 ```bash
 npm start
+```
+
+5) open a second terminal window and run the tests
+
+```bash
+npm test
 ```
 
 ## License
