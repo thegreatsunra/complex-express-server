@@ -5,6 +5,13 @@ module.exports = (config) => {
     files: [
       '*.js'
     ],
+    preprocessors: {
+      '*.js': ['webpack']
+    },
     plugins: ['karma-mocha', 'karma-phantomjs-launcher'],
+    webpack: {
+    },
+    webpackMiddleware: {
+    }
   })
 }
