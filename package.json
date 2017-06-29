@@ -45,9 +45,8 @@
     "lint": "eslint --ext .js ./",
     "lint:fix": "eslint --ext .js --fix ./",
     "test": "npm run test:unit && npm run test:e2e",
-    "test:e2e": "nightwatch --env chrome --config test/e2e/nightwatch.conf.js",
-    "test:unit": "karma start ./test/unit/karma.conf.js --single-run",
-    "start": "node ./index.js"
+    "test:client:e2e": "nightwatch --env chrome --config test/client/e2e/nightwatch.conf.js",
+    "test:client:unit": "karma start ./test/client/unit/karma.conf.js --single-run",
     "start": "node ./src/server/index.js"
   },
   "main": "./src/server/index.js"
