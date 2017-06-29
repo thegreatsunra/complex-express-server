@@ -10,6 +10,15 @@ module.exports = (config) => {
     },
     plugins: ['karma-mocha', 'karma-webpack', 'karma-phantomjs-launcher'],
     webpack: {
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: ['eslint-loader']
+          }
+        ]
+      }
     },
     webpackMiddleware: {
     }
