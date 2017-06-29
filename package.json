@@ -42,7 +42,7 @@
     "lint": "eslint --ext .js ./",
     "lint:fix": "eslint --ext .js --fix ./",
     "start": "node ./index.js",
-    "test": "mocha"
+    "test": "./node_modules/karma/bin/karma start ./test/karma.conf.js --single-run"
   },
   "main": "index.js"
 }
