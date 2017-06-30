@@ -1,20 +1,17 @@
-// For authoring Nightwatch tests, see
-// http://nightwatchjs.org/guide#usage
+import { Selector } from 'testcafe'
 
-module.exports = {
-  'default e2e tests': function (browser) {
-    // automatically uses dev Server port from /config.index.js
-    // default: http://localhost:8080
-    // see nightwatch.conf.js
-    const devServer = browser.globals.devServerURL
+fixture `Getting Started`
+  .page `http://localhost:3000`
 
-    browser
-      .url(devServer)
-      .waitForElementVisible('#app', 5000)
-      .assert.elementPresent('.title')
-      .assert.containsText('.title', 'Your basic express server is working!')
-      .assert.elementPresent('.description')
-      .assert.containsText('.description', 'Now get out there and build something great!')
-      .end()
-  }
-}
+const title = Selector('.title')
+const description = Selector('.description')
+
+test('Title', async test => {
+  await test
+  .expect(title.innerText).eql('Your basic express server is working!', 'Title contains the correct text')
+})
+
+test('Description', async test => {
+  await test
+  .expect(description.innerText).eql('Now get out there and build something great!', 'Description contains the correct text')
+})

@@ -23,7 +23,6 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.0.2",
-    "chromedriver": "^2.30.1",
     "eslint": "^4.0.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.8.0",
@@ -36,9 +35,8 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^2.0.3",
     "mocha": "^3.4.2",
-    "nightwatch": "^0.9.16",
     "phantomjs-prebuilt": "^2.1.14",
-    "selenium-server": "^3.4.0",
+    "testcafe": "^0.16.2",
     "webpack": "^3.0.0"
   },
   "scripts": {
@@ -46,7 +44,7 @@
     "lint:fix": "eslint --ext .js --fix ./",
     "test": "npm run test:server:unit && npm run test:client:unit && npm run test:client:e2e",
     "test:server:unit": "mocha ./test/server/unit/**/*.js",
-    "test:client:e2e": "nightwatch --env chrome --config test/client/e2e/nightwatch.conf.js",
+    "test:client:e2e": "testcafe chrome ./test/client/e2e/specs",
     "test:client:unit": "karma start ./test/client/unit/karma.conf.js --single-run",
     "start": "node ./src/server/index.js"
   },
